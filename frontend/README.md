@@ -1,4 +1,4 @@
-# frontend
+# to-do calendar
 
 ## Framework7 CLI Options
 
@@ -6,7 +6,7 @@ Framework7 app created with following options:
 
 ```
 {
-  "cwd": "E:\\projects\\to-do_calendar",
+  "cwd": "E:\\projects\\to-do_calendar\\frontend",
   "type": [
     "web",
     "pwa",

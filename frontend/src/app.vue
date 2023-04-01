@@ -59,13 +59,12 @@
   </f7-app>
 </template>
 <script setup>
-import { ref, onMounted } from 'vue';
-import { f7, f7ready } from 'framework7-vue';
-import { getDevice } from 'framework7/lite-bundle';
+import {ref, onMounted} from 'vue';
+import {f7, f7ready} from 'framework7-vue';
+import {getDevice} from 'framework7/lite-bundle';
 import cordovaApp from './js/cordova-app.js';
 
 import routes from './js/routes.js';
-import store from './js/store';
 import Popup from "@/components/Popup.vue";
 
 const device = getDevice();
@@ -76,8 +75,6 @@ const f7params = {
 
 
   id: 'io.framework7.myapp', // App bundle ID
-  // App store
-  store: store,
   // App routes
   routes: routes,
   // Register service worker (only on production build)

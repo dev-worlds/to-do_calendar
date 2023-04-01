@@ -1,11 +1,11 @@
 // Import Vue
-import { createApp } from 'vue';
+import {createApp} from 'vue';
 
 // Import Framework7
 import Framework7 from 'framework7/lite-bundle';
 
 // Import Framework7-Vue Plugin
-import Framework7Vue, { registerComponents } from 'framework7-vue/bundle';
+import Framework7Vue, {registerComponents} from 'framework7-vue/bundle';
 
 // Import Framework7 Styles
 import 'framework7/css/bundle';
@@ -13,16 +13,19 @@ import 'framework7/css/bundle';
 // Import Icons and App Custom Styles
 import '../css/icons.css';
 import '../css/app.scss';
+import '../css/base.scss';
 
 // Import App Component
 import App from '../app.vue';
+import {createPinia} from 'pinia'
 
+const pinia = createPinia()
 // Init Framework7-Vue Plugin
 Framework7.use(Framework7Vue);
 
 // Init App
 const app = createApp(App);
-
+app.use(pinia)
 // Register Framework7 Vue components
 registerComponents(app);
 

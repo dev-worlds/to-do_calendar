@@ -1,4 +1,5 @@
 import TodayPage from '../pages/today.vue';
+import ToDoItem from '../pages/todoItem.vue';
 import AboutPage from '../pages/about.vue';
 import FormPage from '../pages/form.vue';
 import CatalogPage from '../pages/catalog.vue';
@@ -12,7 +13,13 @@ import NotFoundPage from '../pages/404.vue';
 var routes = [
     {
         path: '/',
+        name: 'home',
         component: TodayPage,
+    },
+    {
+        path: '/to-do-item/:id',
+        name: 'to-do-item',
+        component: ToDoItem,
     },
     {
         path: '/about/',

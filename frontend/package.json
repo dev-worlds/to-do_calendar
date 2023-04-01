@@ -33,7 +33,8 @@
     "material-icons": "^1.13.4",
     "skeleton-elements": "^4.0.1",
     "swiper": "^8.4.7",
-    "vue": "^3.2.47"
+    "vue": "^3.2.47",
+    "pinia": "^2.0.33"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
